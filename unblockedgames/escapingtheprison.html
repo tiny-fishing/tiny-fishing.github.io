@@ -186,5 +186,212 @@ gtag("config", "G-PXW1CVZ4F6");
         <style>
             body, .footer-description, .box-content, .game-info-section, .gameplay-section, .plot-section, .features-section, .tips-section, .feedback-section, .related-info, .game-header { background: #000000 !important; }
         </style>
-</body>
+<div class="ads-container">
+      <!-- Left Ad -->
+      <div class="ad-sidebar">
+        <div class="ad-box">
+          <div class="ad-label">Advertisement</div>
+          <div class="ad-content">
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8136533182122624"
+              crossorigin="anonymous"
+            ></script>
+            <!-- 300x600 -->
+            <ins
+              class="adsbygoogle"
+              style="display: inline-block; width: 300px; height: 600px"
+              data-ad-client="ca-pub-8136533182122624"
+              data-ad-slot="9777597646"
+            ></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+          <div class="corner-effect top-left"></div>
+          <div class="corner-effect top-right"></div>
+          <div class="corner-effect bottom-left"></div>
+          <div class="corner-effect bottom-right"></div>
+        </div>
+      </div>
+
+      <!-- Right Ad -->
+      <div class="ad-sidebar">
+        <div class="ad-box">
+          <div class="ad-label">Advertisement</div>
+          <div class="ad-content">
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8136533182122624"
+              crossorigin="anonymous"
+            ></script>
+            <!-- 300x600 -->
+            <ins
+              class="adsbygoogle"
+              style="display: inline-block; width: 300px; height: 600px"
+              data-ad-client="ca-pub-8136533182122624"
+              data-ad-slot="9777597646"
+            ></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+          <div class="corner-effect top-left"></div>
+          <div class="corner-effect top-right"></div>
+          <div class="corner-effect bottom-left"></div>
+          <div class="corner-effect bottom-right"></div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .ads-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        pointer-events: none;
+        z-index: 999;
+        padding-top: 80px;
+      }
+
+      .ad-sidebar {
+        pointer-events: auto;
+        width: 300px;
+        height: 600px;
+        margin: 0 10px;
+      }
+
+      .ad-box {
+        position: relative;
+        background: #1a1a1a;
+        border: 1px solid #333;
+        overflow: hidden;
+        height: 100%;
+        transition: transform 0.5s ease;
+      }
+
+      .ad-label {
+        background: #222;
+        color: #999;
+        padding: 4px 8px;
+        font-size: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .ad-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100% - 24px);
+      }
+
+      /* Corner Effects */
+      .corner-effect {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #333;
+        transition: all 0.3s ease;
+        pointer-events: none;
+      }
+
+      .top-left {
+        top: 10px;
+        left: 10px;
+        border-right: none;
+        border-bottom: none;
+      }
+
+      .top-right {
+        top: 10px;
+        right: 10px;
+        border-left: none;
+        border-bottom: none;
+      }
+
+      .bottom-left {
+        bottom: 10px;
+        left: 10px;
+        border-right: none;
+        border-top: none;
+      }
+
+      .bottom-right {
+        bottom: 10px;
+        right: 10px;
+        border-left: none;
+        border-top: none;
+      }
+
+      /* Hover Effects */
+      .ad-box:hover {
+        transform: perspective(1000px) rotateY(5deg);
+      }
+
+      .ad-box:hover .corner-effect {
+        border-color: #666;
+      }
+
+      .ad-box:hover .top-left {
+        transform: translate(-5px, -5px);
+      }
+
+      .ad-box:hover .top-right {
+        transform: translate(5px, -5px);
+      }
+
+      .ad-box:hover .bottom-left {
+        transform: translate(-5px, 5px);
+      }
+
+      .ad-box:hover .bottom-right {
+        transform: translate(5px, 5px);
+      }
+
+      /* Loading Animation */
+      .ad-box::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #333, transparent);
+        animation: loading 2s linear infinite;
+        pointer-events: none;
+      }
+
+      @keyframes loading {
+        0% {
+          left: -100%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1600px) {
+        .ads-container {
+          display: none;
+        }
+      }
+
+      /* Main content adjustment */
+      .section {
+        margin: 0 320px;
+      }
+
+      @media (max-width: 1600px) {
+        .section {
+          margin: 0 auto;
+        }
+      }
+    </style>
+  </body>
 </html>
